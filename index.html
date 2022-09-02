@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacman</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="js/model/Component.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="data/tile.js"></script>
+    <script src="data/maze.js"></script>
+    <script src="js/model/Dot.js"></script>
+    <script src="js/model/Wall.js"></script>
+    <script src="js/model/Sprite.js"></script>
+    <script src="js/model/Direction.js"></script>
+    <script src="js/model/Position.js"></script>
+    <script src="js/model/Layer.js"></script>
+    <script src="js/model/Maze.js"></script>
+    <script src="js/model/Pacman.js"></script>
+    <script src="js/model/Ghost.js"></script>
+    <script src="js/view/PacmanView.js"></script>
+    <script src="js/controller/PacmanCtrl.js"></script>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/model/Game.js"></script>
+    <script src="js/consts.js"></script>
+    <script src="js/view/GameView.js"></script>
+    <script src="js/controller/GameCtrl.js"></script>
+
+
+</head>
+
+<body>
+    <div id="outerBorders" class="borders">
+        <div id="scoreBorder" class="borders">
+            <div class="scoreBox">SCORE:<span class="score"></span>
+            </div>
+            <div class="highscoreBox">HIGHSCORE:<span class="highscore"></span></div>
+        </div>
+        <div id="game"></div>
+        <div id="lifeBorder" class="borders"></div>
+
+    </div>
+    <script>ctrl = new GameCtrl()</script>
+</body>
+</html>
